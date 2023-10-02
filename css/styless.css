@@ -11,6 +11,7 @@
   --second-font: 'Raleway', sans-serif;
   --border-color: #ececec;
   --icon-color: #afb1b8;
+  --backcolor-service: #2f303a;
 }
 
 .body {
@@ -84,10 +85,37 @@
   line-height: 1.17;
 }
 
+.head_info::before {
+  display: block;
+  content: '';
+  width: 5px;
+  height: 2px;
+  color: red;
+}
+
 .head_info:hover,
 .head_info:focus,
 .head_info:active {
   color: var(--hover-color);
+}
+
+.icon_bar {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 10px;
+}
+
+.icon_info {
+  fill: var(--parrafo-color);
+  margin: auto;
+}
+
+.icon_info:hover,
+.icon_info:focus,
+.icon_info:active {
+  fill: var(--hover-color);
+  cursor: pointer;
 }
 
 .main {
@@ -102,11 +130,12 @@
   align-items: center;
   justify-content: center;
   background-image: url(../Imagenes/BkgHero.jpg);
-  opacity: 0.8;
-  background-color: #2f303a;
+  background-color: (#2f303a);
+  max-width: 1600px;
+  opacity: 1;
   background-repeat: no-repeat;
   background-size: cover;
-  padding: 186px 0;
+  padding: 165px 0;
 }
 
 .title {
@@ -116,7 +145,8 @@
   letter-spacing: 0.06px;
   line-height: 1.36;
   text-align: center;
-  padding: 0 462px;
+  padding: 0 462px 41px 462px;
+  margin: 0;
 }
 
 .firstbutton {
@@ -125,6 +155,7 @@
   font-size: 16px;
   letter-spacing: 0.06px;
   line-height: 1.87;
+  padding: 10px 1px 10px 2px;
   border: none;
   border-radius: 4px;
 }
@@ -200,6 +231,35 @@
   margin: auto;
   column-gap: 25px;
   /* box-shadow: 20px 20px 5px 15px red; */
+}
+
+.img_service {
+  width: 370px;
+  height: 294px;
+}
+
+.img_service:nth-child(1) {
+  background-image: url(../Imagenes/NosdedicamosOrganigrama.jpg);
+}
+
+.img_service:nth-child(2) {
+  background-image: url(../Imagenes/NosdedicamosCelulares.jpg);
+}
+
+.img_service:nth-child(3) {
+  background-image: url(../Imagenes/NosdedicamosColores.jpg);
+}
+
+.img_tittle {
+  background-color: var(--backcolor-service);
+  opacity: 0.8;
+}
+
+.tittle_img {
+  color: var(--princptittle-color);
+  text-align: center;
+  padding: 26px 0;
+  margin: 0;
 }
 
 .team_name {
